@@ -12,7 +12,9 @@
     "cors": "2.8.1",
     "express": "~4.0.0",
     "mssql": "^6.2.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "swagger-jsdoc": "^4.3.0",
+    "swagger-ui-express": "^4.1.4"
   },
   "devDependencies": {
     "express": "^4.17.1",

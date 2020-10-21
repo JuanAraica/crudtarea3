@@ -1,8 +1,22 @@
 const express     = require( 'express' );
 const mysql       = require( 'mysql' );
-const bodyParser  = require( 'body-parser' );
+const bodyParser = require('body-parser');
+const swaggerJSDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
 const PORT        = process.env.PORT || 3050;
-const app         = express();
+const app = express();
+
+const swaggerOptions = {
+   swaggerDefinition: {
+      info: {
+         title: 'Api Usuarios',
+         description: 'Api de usuarios para registro',
+         contact: {
+            name:'Juan Araica'
+         },servers:["http://localhost:3050/"]
+      }
+   }
+}
 
 app.use( bodyParser.json() );
 
